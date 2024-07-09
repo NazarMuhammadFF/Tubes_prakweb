@@ -246,6 +246,56 @@
                 </div>
               </li>
             </template>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="./assets/images/1.jpg" width="360" height="360" loading="lazy"
+                    :alt="item.name" class="img-cover">
+        
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card" @click.prevent="$store.cart.add(item)">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                  <button class="card-detail-btn" aria-label="add to card" title="Add To Card">
+                    <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <use href="/assets/images/feather-sprite.svg#eye" />
+                  </svg>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">(1)</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Commodo leo sed porta</a>
+                  </h3>
+
+                  <data class="card-price" value="15">$15.00</data>
+
+                </div>
+
+              </div>
+            </li>
             
 
           </ul>
